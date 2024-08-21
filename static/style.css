@@ -1,0 +1,34 @@
+body {
+  font-family: "Courier";
+  overflow: hidden;
+}
+
+span {
+  white-space: pre-wrap;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#menu {
+  position:absolute;
+  width:fit-content;
+}
+
+#content {
+  width:100vw;
+  height:100vh;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+}
