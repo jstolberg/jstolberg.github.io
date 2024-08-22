@@ -1,6 +1,7 @@
 body {
 	font-family: "Courier";
-	overflow: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 span {
@@ -21,11 +22,6 @@ a {
 #menu {
 	position:absolute;
 	width:fit-content;
-}
-
-#content {
-	width:100vw;
-	height:100vh;
 }
 
 #container {
