@@ -7,7 +7,7 @@ function renderButton(site, l = 26) {
 
 // Function to create menu
 function createMenu() {
-	const names = ["home", "music", "av", "coding"];
+	const names = ["home", "music", "other"];
 	const container = document.getElementById('menu');
 
 	names.forEach(name => {
