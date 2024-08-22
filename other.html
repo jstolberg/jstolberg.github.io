@@ -9,7 +9,17 @@
       <script src="static/script.js"></script>
         <div id="menu">
 			<script>createMenu()</script>
-        </div>
+		</div>
+			<div id="content">
+				<span id="blank">This page is intentionally left blank</span>
+				<script>
+					// Call the function to place the text randomly when the page loads
+					window.onload = setBlankPosition;
+					
+					// Reposition the text randomly when the window is resized
+					window.onresize = setBlankPosition;
+				</script>
+			</div>
       </div>
     </body>
 </html>

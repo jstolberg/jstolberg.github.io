@@ -96,7 +96,7 @@ function setLinksPosition() {
 	
 	var i = 0;
 	items.forEach(button => {
-	// Get dimensions of menu
+		// Get dimensions of menu
 		const menuWidth = document.getElementById('menu').offsetWidth;
 		const menuHeight = document.getElementById('menu').offsetHeight;
 		
@@ -130,4 +130,21 @@ function setLinksPosition() {
 		// Update enumerator
 		i = i + 1;
 	});
+}
+
+function setBlankPosition() {
+		// Get dimensions of menu
+		const menuWidth = document.getElementById('menu').offsetWidth;
+		const menuHeight = document.getElementById('menu').offsetHeight;
+		
+		// Get the dimensions of the window (viewport)
+		const windowWidth = window.innerWidth;
+		const windowHeight = window.innerHeight;
+		
+		const blank = document.getElementById('blank');
+		const blankWidth = blank.offsetWidth;
+		const blankHeight = blank.offsetHeight;
+		blank.style.position = `absolute`;
+		blank.style.left = `${(windowWidth-blankWidth)/2}px`;
+		blank.style.top = `${menuHeight + (windowHeight - menuHeight - blankHeight)/2}px`;
 }
