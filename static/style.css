@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'localFont';
+    src: url('cour.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-	font-family: "Courier";
+	font-family: 'localFont';
 	overflow-y: auto;
 	overflow-x: hidden;
 }
