@@ -11,16 +11,17 @@
 			<script>createMenu()</script>
         </div>
         <div id="content">
-			<div id="randomText">SPARKLETINI XOXO</div>
-
 			<script>
 				// Call the function to place the text randomly when the page loads
-				window.onload = placeTextRandomly;
+				window.onload = function() {
+					listLinks(); 
+					setLinksPosition();
+				};
 				
 				// Reposition the text randomly when the window is resized
-				window.onresize = placeTextRandomly;
+				window.onresize = setLinksPosition;
 			</script>
 		</div>
-		</div>
+      </div>
     </body>
 </html>

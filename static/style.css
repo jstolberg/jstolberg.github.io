@@ -1,34 +1,43 @@
 body {
-  font-family: "Courier";
-  overflow: hidden;
+	font-family: "Courier";
+	overflow: hidden;
 }
 
 span {
-  white-space: pre-wrap;
+	white-space: pre-wrap;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .button {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 20px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
 }
 
 #menu {
-  position:absolute;
-  width:fit-content;
+	position:absolute;
+	width:fit-content;
 }
 
 #content {
-  width:100vw;
-  height:100vh;
+	width:100vw;
+	height:100vh;
 }
 
 #container {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+}
+
+#randomText {
+	position: absolute;
+	padding: 5px;
+}
+
+.linkContainer {
+	position: absolute;
 }
