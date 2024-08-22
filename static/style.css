@@ -9,6 +9,8 @@ body {
 	font-family: 'localFont';
 	overflow-y: auto;
 	overflow-x: hidden;
+	width: 100vw;
+	height: 90vh;
 }
 
 span {
