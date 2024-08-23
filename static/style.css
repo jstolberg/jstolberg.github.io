@@ -49,12 +49,7 @@ a {
 	height: 100vh;
 }
 
-#fullViewPort {
-	width: 100vw;
-	height: 100vh;
-}
-
-#randomText {
+#info {
 	position: absolute;
 	padding: 5px;
 }
@@ -68,4 +63,12 @@ a {
 .musicLink {
 	position: absolute;
 	padding: 5px;
+}
+
+.infoBox {
+	margin-bottom: 10px;
+}
+
+.infoLink {
+	margin-left: 20px;
 }

@@ -8,7 +8,7 @@ function renderButton(site, l = 26) {
 // Function to create menu
 function createMenu() {
 	const pages = [
-		["home", "index"],
+		["info", "info"],
 		["music", "music"],
 		["other", "other"]
 	];
@@ -146,4 +146,14 @@ function setBlankPosition() {
 		blank.style.position = `absolute`;
 		blank.style.left = `${(windowWidth-blankWidth)/2}px`;
 		blank.style.top = `${menuHeight + (windowHeight - menuHeight - blankHeight)/2}px`;
+}
+
+function setInfoPosition() {
+		// Get dimensions of menu
+		const menuLeft = document.getElementById('menu').offsetLeft;
+		const menuHeight = document.getElementById('menu').offsetHeight;
+		
+		const info = document.getElementById('info');
+		info.style.left = `${(menuLeft + 30)}px`;
+		info.style.top = `${menuHeight}px`;
 }

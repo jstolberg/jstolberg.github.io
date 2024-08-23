@@ -5,24 +5,21 @@
       <title>SSSSSSSSSSSSSSPPAAAAAAAAAAARRRRKLELLEELLELEEEEEEE</title>
     </head>
     <body>
-      <script src="static/script.js"></script>
       <div id="container">
+      <script src="static/script.js"></script>
         <div id="menu">
 			<script>createMenu()</script>
-        </div>
-        <div id="content">
-			<div id="randomText">SPARKLETINI XOXO</div>
-			
-			<script>
-				// Call the function to place the text randomly when the page loads
-				const randomText = document.getElementById('randomText');
-				const menuHeight = document.getElementById('menu').offsetHeight;
-				window.onload = () => placeItemRandomly(container, randomText, offset=[menuHeight,0,0,0]);
-				
-				// Reposition the text randomly when the window is resized
-				window.onresize = () => placeItemRandomly(container, randomText, offset=[menuHeight,0,0,0]);
-			</script>
 		</div>
-		</div>
+			<div id="content">
+				<span id="blank">This page is intentionally left blank</span>
+				<script>
+					// Call the function to place the text randomly when the page loads
+					window.onload = setBlankPosition;
+					
+					// Reposition the text randomly when the window is resized
+					window.onresize = setBlankPosition;
+				</script>
+			</div>
+      </div>
     </body>
 </html>
