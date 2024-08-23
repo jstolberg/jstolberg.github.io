@@ -8,9 +8,9 @@ function renderButton(site, l = 26) {
 // Function to create menu
 function createMenu() {
 	const pages = [
-		["home", "index.html"],
-		["music", "music.html"],
-		["other", "other.html"]
+		["home", "index"],
+		["music", "music"],
+		["other", "other"]
 	];
 	const container = document.getElementById('menu');
 
