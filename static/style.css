@@ -11,6 +11,7 @@ body {
 	overflow-y: auto;
 	overflow-x: hidden;
 	max-width: 100%;
+	margin: 0px;
 }
 
 html {
@@ -36,12 +37,20 @@ a {
 #menu {
 	position:absolute;
 	width:fit-content;
+	max-width: 100%;
 }
 
 #container {
 	display: flex;
     flex-wrap: wrap;
 	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+}
+
+#fullViewPort {
+	width: 100vw;
+	height: 100vh;
 }
 
 #randomText {
@@ -51,4 +60,11 @@ a {
 
 .linkContainer {
 	position: absolute;
+	display: flex;
+	max-width: 100%;
+}
+
+.musicLink {
+	position: absolute;
+	padding: 5px;
 }
