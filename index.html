@@ -11,9 +11,7 @@
 			<script>createMenu()</script>
         </div>
         <div id="content">
-			<div id="fullViewPort">
-				<div id="randomText">SPARKLETINI XOXO</div>
-			</div>
+			<div id="randomText">SPARKLETINI XOXO</div>
 			
 			<script>
 				// Call the function to place the text randomly when the page loads
@@ -22,7 +20,7 @@
 				window.onload = () => placeItemRandomly(container, randomText, offset=[menuHeight,0,0,0]);
 				
 				// Reposition the text randomly when the window is resized
-				window.onresize = () => placeItemRandomly(content, randomText, offset=[menuHeight,0,0,0]);
+				window.onresize = () => placeItemRandomly(container, randomText, offset=[menuHeight,0,0,0]);
 			</script>
 		</div>
 		</div>
