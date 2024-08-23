@@ -38,6 +38,7 @@ a {
 	position:absolute;
 	width:fit-content;
 	max-width: 100%;
+	padding: 10px;
 }
 
 #container {
