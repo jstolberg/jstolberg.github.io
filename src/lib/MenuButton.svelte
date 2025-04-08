@@ -32,10 +32,4 @@
   span {
     white-space: pre-wrap;
   }
-    
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
 </style>

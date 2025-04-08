@@ -19,3 +19,19 @@ html {
 	overflow-x: hidden;
     -webkit-text-size-adjust: none;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+	transition: text-shadow 0.1s ease;
+  }
+  
+  a:hover {
+	text-shadow: -2px 2px 3px rgb(247, 0, 255);
+  }
+
+#content {
+	padding: 0px;
+	margin: 0px;
+	flex: 1;
+}

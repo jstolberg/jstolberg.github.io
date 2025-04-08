@@ -2,15 +2,6 @@ function randomInRange(min: number, max: number) {
 	return Math.random() * (max - min) + min;
 }
 
-export function getEdges(element: HTMLElement) {
-    return {
-        'top': element.offsetTop,
-        'right': element.offsetLeft + element.offsetWidth,
-        'bottom': element.offsetTop + element.offsetHeight,
-        'left': element.offsetLeft
-    }
-}
-
 export function getRandomPos(parent: HTMLElement, child: HTMLElement) {
 	// Get the dimensions of child element
 	const childWidth = child.offsetWidth;
