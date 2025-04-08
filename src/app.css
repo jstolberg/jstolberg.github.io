@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'localFont';
+    src: url('cour.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+	font-family: 'localFont';
+	font-size: 16px;
+	overflow-y: auto;
+	overflow-x: hidden;
+	max-width: 100%;
+	margin: 0px;
+}
+
+html {
+	overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+}

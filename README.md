@@ -1,1 +1,38 @@
-"The webpage 'Sparkletini' is a vibrant, dynamic page with the title 'SPARKLETINI XOXO.' It appears to be visually minimalistic and colorful, possibly serving as a playful or experimental web project. The page features stylized, large text, with an artistic focus, and little to no conventional content or navigation. The main content is centered on the page with a unique aesthetic. The purpose or theme is not immediately clear but seems focused on creativity and visual impact." - ChatGBT, 2024
+# sv
+
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+
+## Creating a project
+
+If you're seeing this, you've probably already done this step. Congrats!
+
+```bash
+# create a new project in the current directory
+npx sv create
+
+# create a new project in my-app
+npx sv create my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
