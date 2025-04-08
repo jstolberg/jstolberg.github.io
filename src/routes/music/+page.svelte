@@ -1,6 +1,4 @@
 <script lang="ts">
-    import { onMount} from 'svelte';
-    import { getRandomPos } from '$lib/utils';
     import MusicLink from '$lib/MusicLink.svelte';
 
     const items = [

@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount} from 'svelte';
-    import { getRandomPos } from '$lib/utils';
 
     let { name, href} = $props();
     let container: HTMLElement;

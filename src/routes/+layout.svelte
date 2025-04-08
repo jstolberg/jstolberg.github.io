@@ -1,6 +1,5 @@
 <script lang='ts'>
-    import { setContext } from 'svelte';
-    import '../app.css'
+    import '../app.css';
     import MenuButton from '$lib/MenuButton.svelte';
 
 	let { children } = $props();
