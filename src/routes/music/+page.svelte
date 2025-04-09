@@ -3,7 +3,7 @@
     import { onMount } from 'svelte';
 
     const items = [
-        ["LET'S GO SHOPLIFTING (III) - NIGHTCORE MIX", "https://soundcloud.com/spraklitani/lets-go-shoplifting-part-iii"],
+        ["LET'S GO SHOPLIFTING (III) - NXC MIX", "https://soundcloud.com/spraklitani/lets-go-shoplifting-part-iii"],
 		["✨ UNFOLDING HORSES ✨", "https://soundcloud.com/spraklitani/unfolding-horses"],
 		["DZ XX", "https://soundcloud.com/spraklitani/dz-xx"],
 		["HAPPY EVER AFTER 💖", "https://soundcloud.com/spaekltini/sparkletini-b2b-yen3k-happy-ever-after"],
