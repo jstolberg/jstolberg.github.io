@@ -11,15 +11,16 @@
         x += vx;
         y += vy;
         if (x < 0 || x > bx) vx *= -1;
-        if (y < 0 || y > by) vy *= -1;
+        if (y < -10 || y > by) vy *= -1; // -5 to adjust for text margin
         title.style.transform = `translate(${x}px, ${y}px)`;
         requestAnimationFrame(updatePosition);
     }
 
     function initializeTitle() {
-        [x,y] = getRandomPos(content, title);
         bx = content.offsetWidth - title.offsetWidth;
         by = content.offsetHeight - title.offsetHeight;
+        x = Math.random()*bx;
+        y = Math.random()*by;
         title.style.visibility = 'visible';
     }
 
@@ -35,6 +36,12 @@
 </div>
 
 <style>
+    #content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
     #title {
         position: absolute;
         visibility: hidden;

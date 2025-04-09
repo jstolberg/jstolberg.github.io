@@ -6,6 +6,8 @@
     let link: HTMLElement;
 
     onMount(() => {
+        container.style.width = `${Math.min(1200,window.innerWidth)}px`;
+        
         let x = Math.random()*(container.offsetWidth - link.offsetWidth);
         link.style.left = `${x}px`;
 
@@ -23,7 +25,6 @@
 <style>
 .linkContainer {
     position: relative;
-    width: 70%;
     height: 70px;
 }
 

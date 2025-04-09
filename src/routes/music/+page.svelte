@@ -1,5 +1,6 @@
 <script lang="ts">
     import MusicLink from '$lib/MusicLink.svelte';
+    import { onMount } from 'svelte';
 
     const items = [
         ["LET'S GO SHOPLIFTING (III) - NIGHTCORE MIX", "https://soundcloud.com/spraklitani/lets-go-shoplifting-part-iii"],

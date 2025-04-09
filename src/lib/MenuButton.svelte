@@ -1,5 +1,5 @@
 <script lang="ts">
-    let { name, href } = $props();
+    let { name, href, size = 26} = $props();
 
     function renderButton(site: String, l = 26) {
         const tb = '+' + '-'.repeat(l) + '+';
@@ -7,7 +7,8 @@
         const but = [tb, mid, tb].join('\n');
         return but;
     }
-    const buttonText = renderButton(name);
+
+    const buttonText = renderButton(name, size);
 </script>
 
 <button class="ascii-button">
@@ -24,8 +25,8 @@
     cursor: pointer;
     padding: 0;
     display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
     flex-shrink: 0;
   }
 

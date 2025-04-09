@@ -1,34 +1,35 @@
 <script lang='ts'>
     import '../app.css';
-    import MenuButton from '$lib/MenuButton.svelte';
+    import {onMount, tick} from 'svelte';
+    import Menu from '$lib/Menu.svelte';
 
 	let { children } = $props();
 
-    let buttons = [
-        {name: 'home', href: '/'},
-        {name: 'music', href: '/music'},
-        {name: 'other', href: '/other'}];
+    let windowWidth = $state(0);
+
+    const updateWidth = () => {
+        windowWidth = window.innerWidth
+    }
+
+    onMount(() => {
+        updateWidth();
+        addEventListener('resize', updateWidth);
+        return () => removeEventListener('resize', updateWidth);
+    })
 </script>
 
 <div id="container">
-    <div id="menu">
-        {#each buttons as button}
-            <MenuButton name={button.name} href={button.href}/>
-        {/each}
-    </div>
-    <div class="page-content">
-        {@render children()}
-    </div>
+    {#await tick() then _}
+        {#key windowWidth}
+            <Menu windowWidth={windowWidth}/>
+            <div class="page-content">
+                {@render children()}
+            </div>
+        {/key}
+    {/await}
 </div>
 
 <style>
-#menu {
-    display: flex;
-    justify-content: center;
-    max-width: 100%;
-    padding-top: 10px;
-}
-
 #container {
 	display: flex;
     flex-direction: column;
